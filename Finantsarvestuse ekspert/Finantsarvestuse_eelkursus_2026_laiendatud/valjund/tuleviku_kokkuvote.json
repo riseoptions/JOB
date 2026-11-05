@@ -1,0 +1,21 @@
+{
+  "andmed": "AINULT SYNTEETILISED – EI OLE HTM/RTK ANDMED",
+  "versioon": "tuleviku_finantslabor-1.0",
+  "kirjeid": 50,
+  "vajab_ulevaatust": 6,
+  "reeglite_loendur": {
+    "EBATAVALISELT_SUUR_ARVE": 1,
+    "KULUKESKUS_PUUDUB": 1,
+    "SUMMA_EI_KLAPI": 1,
+    "VIGANE_KUUPAEV": 1,
+    "VOIMALIK_DUPLIKAAT": 2
+  },
+  "arve_summad_kulukeskuse_jargi_eur": {
+    "PUUDUB": "933.89",
+    "HALDUS": "16416.57",
+    "IT": "12219.28",
+    "KOOLITUS": "45911.58"
+  },
+  "marge": "SUM(kokku) on toorarvete koond; see ei ole ametlik raamatupidamis- ega eelarvetaitmine.",
+  "source_sha256": "5a81f6f1c1667d8c233469ceae2aa3dea83af976ac8e1589fd2fe80f378a2314"
+}
