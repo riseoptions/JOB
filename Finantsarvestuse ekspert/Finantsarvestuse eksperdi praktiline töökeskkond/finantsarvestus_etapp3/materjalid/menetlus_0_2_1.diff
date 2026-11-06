@@ -1,0 +1,22 @@
+--- etapp2/menetlus.py
++++ etapp3/menetlus.py
+@@ -9,7 +9,8 @@
+ from pathlib import Path
+ 
+ ROOT=Path(__file__).resolve().parents[1]
+-RULE_VERSION='0.2.0'
++RULE_VERSION='0.2.1'
++from andmeleping import shape_issues
+ CENTERS={'DEMO_IT','DEMO_HALDUS','DEMO_OPE'}
+ ACCOUNTS={'DEMO_KULU'}
+ RATES={Decimal('0'),Decimal('0.09'),Decimal('0.13'),Decimal('0.24')}
+@@ -119,6 +120,9 @@
+     if r.get('account') not in ACCOUNTS:add('KONTO','account','Tundmatu DEMO-konto')
+     if r.get('cost_center') not in CENTERS:add('KULUKESKUS','cost_center','Tundmatu DEMO-kulukeskus')
+     if duplicate:add('DUPLIKAAT','invoice_number','Sama tarnija ja normaliseeritud arvenumber teises dokumendis')
++    # Vana reeglimootor säilitab kõik senised koodid ja kogub vead korraga.
++    if not any(i['severity']=='VIGA' for i in issues):
++        issues.extend(shape_issues(r))
+     return issues
+ 
+ 

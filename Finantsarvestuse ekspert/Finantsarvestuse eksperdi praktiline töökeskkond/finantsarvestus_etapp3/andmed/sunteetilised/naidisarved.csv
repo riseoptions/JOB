@@ -1,0 +1,7 @@
+﻿invoice_id;supplier_id;supplier_name;invoice_number;invoice_date;service_date;due_date;description;net_cents;vat_rate;vat_cents;gross_cents;cost_center;account;status;provenance;note
+DEMO-001;DEMO-T001;Näidistarnija 1 (fiktiivne);N-001;2026-10-02;2026-09-30;2026-10-16;IT hooldus;100000;0.24;24000;124000;DEMO_IT;DEMO_KULU;SISEND;SUNTEETILINE;"Õppenäide; ei tõenda maksukäsitluse sobivust tegelikule tehingule"
+DEMO-002;DEMO-T002;Näidistarnija 2 (fiktiivne);N-002;2026-10-03;2026-10-03;2026-10-17;Kontoritarbed;12555;0.24;3013;15568;DEMO_HALDUS;DEMO_KULU;SISEND;SUNTEETILINE;"Õppenäide; ei tõenda maksukäsitluse sobivust tegelikule tehingule"
+DEMO-003;DEMO-T003;Näidistarnija 3 (fiktiivne);N-003;2026-10-04;2026-10-04;2026-10-18;Ruumide hooldus;75000;0.24;18000;93000;DEMO_HALDUS;DEMO_KULU;SISEND;SUNTEETILINE;"Õppenäide; ei tõenda maksukäsitluse sobivust tegelikule tehingule"
+DEMO-004;DEMO-T004;Näidistarnija 4 (fiktiivne);N-004;2026-10-05;2026-10-05;2026-10-19;Raamatud;20000;0.09;1800;21800;DEMO_OPE;DEMO_KULU;SISEND;SUNTEETILINE;"Õppenäide; ei tõenda maksukäsitluse sobivust tegelikule tehingule"
+DEMO-005;DEMO-T005;Näidistarnija 5 (fiktiivne);N-005;2026-10-06;2026-10-06;2026-10-20;IT litsents;49999;0.24;12000;61999;DEMO_IT;DEMO_KULU;SISEND;SUNTEETILINE;"Õppenäide; ei tõenda maksukäsitluse sobivust tegelikule tehingule"
+DEMO-006;DEMO-T006;Näidistarnija 6 (fiktiivne);N-006;2026-10-07;2026-10-07;2026-10-21;Tõlketeenus;36000;0.24;8640;44640;DEMO_OPE;DEMO_KULU;SISEND;SUNTEETILINE;"Õppenäide; ei tõenda maksukäsitluse sobivust tegelikule tehingule"

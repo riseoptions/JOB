@@ -1,0 +1,48 @@
+[
+  {
+    "source_id": "RE2026",
+    "url": "https://www.fin.ee/sites/default/files/documents/2025-12/2026.%20aasta%20riigieelarve%20seadus.xlsx",
+    "file": "re2026_seadus.xlsx",
+    "downloaded_at": "2026-11-05T17:03:07.103402+00:00",
+    "sha256": "53779ac09966e779df08430e6c3fa2f2c4cbd831e6b0d3410c6d56b85131dce7",
+    "size_bytes": 146794,
+    "publisher": "Rahandusministeerium",
+    "provenance": "TEGELIK",
+    "checked_date": "2026-11-05",
+    "license_status": "Eraldi andmestikulitsentsi ei tuvastatud",
+    "source_page": "https://www.fin.ee/riigi-rahandus-ja-maksud/riigieelarve-ja-eelarvestrateegia/2026-riigieelarve",
+    "period": "2026 aasta",
+    "unit": "tuhat_EUR",
+    "version_description": "Algne riigieelarve seadus"
+  },
+  {
+    "source_id": "TAIT2026",
+    "url": "https://www.fin.ee/sites/default/files/documents/2026-11/2026.%20aasta%20riigieelarve%20t%C3%A4itmine%20majandusliku%20sisu%20j%C3%A4rgi%20%28september%29.xlsx",
+    "file": "re2026_taitmine_september.xlsx",
+    "downloaded_at": "2026-11-05T17:03:18.407437+00:00",
+    "sha256": "678de30e7461527bd2f41b1f7435357b78fdb28988f7ebfc823ae518abd4a98c",
+    "size_bytes": 224645,
+    "publisher": "Rahandusministeerium",
+    "provenance": "TEGELIK",
+    "checked_date": "2026-11-05",
+    "license_status": "Eraldi andmestikulitsentsi ei tuvastatud",
+    "source_page": "https://www.fin.ee/riigi-rahandus-ja-maksud/riigieelarve-ja-eelarvestrateegia/2026-riigieelarve",
+    "period": "2026 jaanuar-september; võrdluseks 2025 jaanuar-september",
+    "unit": "EUR",
+    "version_description": "Septembri majandusliku sisu täitmine"
+  },
+  {
+    "source_id": "TAIT2026A",
+    "file": "re2026_taitmine_august.xlsx",
+    "url": "https://www.fin.ee/sites/default/files/documents/2026-10/2026.%20aasta%20riigieelarve%20t%C3%A4itmine%20seadusepildi%20detailsuses%20%28august%29.xlsx",
+    "downloaded_at": "2026-11-06T06:30:35.959737+00:00",
+    "sha256": "8b924dc9e72d2403f3ceeebb625939b0c956e3cf7c528cf699cdf8090c75f2ed",
+    "size_bytes": 211152,
+    "publisher": "Rahandusministeerium",
+    "provenance": "TEGELIK",
+    "unit": "tuhat_EUR",
+    "period": "2026 jaanuar–august; eelarve kogu aastaks",
+    "version_description": "Augusti väljavõtte Lõplik eelarve; mitte aasta lõpu kinnitatud seis",
+    "license_status": "Eraldi andmestikulitsentsi ei tuvastatud"
+  }
+]
