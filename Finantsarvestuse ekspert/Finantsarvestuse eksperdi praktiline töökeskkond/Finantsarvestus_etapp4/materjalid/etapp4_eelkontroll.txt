@@ -1,0 +1,43 @@
+test_changed_source_rejected (test_etapp1.Etapp1Tests.test_changed_source_rejected) ... ok
+test_currency_and_rounding (test_etapp1.Etapp1Tests.test_currency_and_rounding) ... ok
+test_missing_is_not_zero (test_etapp1.Etapp1Tests.test_missing_is_not_zero) ... ok
+test_real_source_reconciliation (test_etapp1.Etapp1Tests.test_real_source_reconciliation) ... ok
+test_synthetic_is_reproducible (test_etapp1.Etapp1Tests.test_synthetic_is_reproducible) ... ok
+test_blocked_and_wrong_role (test_etapp2.Etapp2Tests.test_blocked_and_wrong_role) ... ok
+test_correction_preserves_source_and_removes_old_duplicate (test_etapp2.Etapp2Tests.test_correction_preserves_source_and_removes_old_duplicate) ... ok
+test_dates_and_provenance (test_etapp2.Etapp2Tests.test_dates_and_provenance) ... ok
+test_duplicate_both_sides (test_etapp2.Etapp2Tests.test_duplicate_both_sides) ... ok
+test_entire_fixture_expected_errors (test_etapp2.Etapp2Tests.test_entire_fixture_expected_errors) ... ok
+test_export_retry_returns_same_payload (test_etapp2.Etapp2Tests.test_export_retry_returns_same_payload) ... ok
+test_full_flow_balanced_and_idempotent_receipt (test_etapp2.Etapp2Tests.test_full_flow_balanced_and_idempotent_receipt) ... ok
+test_import_idempotent_and_atomic_conflict (test_etapp2.Etapp2Tests.test_import_idempotent_and_atomic_conflict) ... ok
+test_missing_and_invalid_date (test_etapp2.Etapp2Tests.test_missing_and_invalid_date) ... ok
+test_missing_id_preserved_and_blocked (test_etapp2.Etapp2Tests.test_missing_id_preserved_and_blocked) ... ok
+test_money_rounding_and_bad_types (test_etapp2.Etapp2Tests.test_money_rounding_and_bad_types) ... ok
+test_new_duplicate_blocks_previously_approved (test_etapp2.Etapp2Tests.test_new_duplicate_blocks_previously_approved) ... ok
+test_payload_tampering_no_posting (test_etapp2.Etapp2Tests.test_payload_tampering_no_posting) ... ok
+test_posting_failure_rolls_back (test_etapp2.Etapp2Tests.test_posting_failure_rolls_back) ... ok
+test_rate_and_dimensions (test_etapp2.Etapp2Tests.test_rate_and_dimensions) ... ok
+test_return_and_audit_immutable (test_etapp2.Etapp2Tests.test_return_and_audit_immutable) ... ok
+test_schema_reopen (test_etapp2.Etapp2Tests.test_schema_reopen) ... ok
+test_boundary_integrated_in_old_engine (test_etapp3.Stage3Tests.test_boundary_integrated_in_old_engine) ... ok
+test_budget_reconciles_and_signs (test_etapp3.Stage3Tests.test_budget_reconciles_and_signs) ... ok
+test_grant_cap_recovery_zero_budget (test_etapp3.Stage3Tests.test_grant_cap_recovery_zero_budget) ... ok
+test_grant_invalid_eligible_rate_rounding (test_etapp3.Stage3Tests.test_grant_invalid_eligible_rate_rounding) ... ok
+test_missing_duplicate_month_fails_both (test_etapp3.Stage3Tests.test_missing_duplicate_month_fails_both) ... ok
+test_no_bool_float_or_negative_cents (test_etapp3.Stage3Tests.test_no_bool_float_or_negative_cents) ... ok
+test_no_timestamp_date_coercion (test_etapp3.Stage3Tests.test_no_timestamp_date_coercion) ... ok
+test_original_error_not_replaced (test_etapp3.Stage3Tests.test_original_error_not_replaced) ... ok
+test_polars_pandas_equivalence (test_etapp3.Stage3Tests.test_polars_pandas_equivalence) ... ok
+test_sql_matches_python (test_etapp3.Stage3Tests.test_sql_matches_python) ... ok
+test_typed_csv_and_extra_preserved (test_etapp3.Stage3Tests.test_typed_csv_and_extra_preserved) ... ok
+test_workbook_and_report_use_changed_input (test_etapp3.Stage3Tests.test_workbook_and_report_use_changed_input) ... ok
+test_wrong_comparison_period_rejected (test_etapp3.Stage3Tests.test_wrong_comparison_period_rejected) ... ok
+test_year_comparison_no_crosscut (test_etapp3.Stage3Tests.test_year_comparison_no_crosscut) ... ok
+test_zero_and_missing_budget (test_etapp3.Stage3Tests.test_zero_and_missing_budget) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 3.539s
+
+OK
+Valmis: 34 eelarvekirjet ja 99 täitmiskirjet. Täitmise protsenti ei arvutatud.

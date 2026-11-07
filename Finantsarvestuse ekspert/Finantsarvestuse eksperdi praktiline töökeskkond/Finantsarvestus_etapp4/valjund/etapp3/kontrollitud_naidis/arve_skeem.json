@@ -1,0 +1,115 @@
+{
+  "additionalProperties": true,
+  "properties": {
+    "invoice_id": {
+      "minLength": 1,
+      "title": "Invoice Id",
+      "type": "string"
+    },
+    "supplier_id": {
+      "minLength": 1,
+      "title": "Supplier Id",
+      "type": "string"
+    },
+    "supplier_name": {
+      "minLength": 1,
+      "title": "Supplier Name",
+      "type": "string"
+    },
+    "invoice_number": {
+      "minLength": 1,
+      "title": "Invoice Number",
+      "type": "string"
+    },
+    "invoice_date": {
+      "format": "date",
+      "title": "Invoice Date",
+      "type": "string"
+    },
+    "service_date": {
+      "format": "date",
+      "title": "Service Date",
+      "type": "string"
+    },
+    "due_date": {
+      "format": "date",
+      "title": "Due Date",
+      "type": "string"
+    },
+    "description": {
+      "minLength": 1,
+      "title": "Description",
+      "type": "string"
+    },
+    "net_cents": {
+      "maximum": 1000000000000,
+      "minimum": 0,
+      "title": "Net Cents",
+      "type": "integer"
+    },
+    "vat_cents": {
+      "maximum": 1000000000000,
+      "minimum": 0,
+      "title": "Vat Cents",
+      "type": "integer"
+    },
+    "gross_cents": {
+      "maximum": 1000000000000,
+      "minimum": 0,
+      "title": "Gross Cents",
+      "type": "integer"
+    },
+    "vat_rate": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+          "type": "string"
+        }
+      ],
+      "title": "Vat Rate"
+    },
+    "cost_center": {
+      "minLength": 1,
+      "title": "Cost Center",
+      "type": "string"
+    },
+    "account": {
+      "minLength": 1,
+      "title": "Account",
+      "type": "string"
+    },
+    "provenance": {
+      "const": "SUNTEETILINE",
+      "title": "Provenance",
+      "type": "string"
+    },
+    "currency": {
+      "const": "EUR",
+      "default": "EUR",
+      "title": "Currency",
+      "type": "string"
+    }
+  },
+  "required": [
+    "invoice_id",
+    "supplier_id",
+    "supplier_name",
+    "invoice_number",
+    "invoice_date",
+    "service_date",
+    "due_date",
+    "description",
+    "net_cents",
+    "vat_cents",
+    "gross_cents",
+    "vat_rate",
+    "cost_center",
+    "account",
+    "provenance"
+  ],
+  "title": "InvoiceInput",
+  "type": "object"
+}

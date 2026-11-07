@@ -1,0 +1,30 @@
+// Valikuline Playwright Test: käivita HTTP-server enne testi.
+import {test,expect} from '@playwright/test';
+const base=process.env.BASE_URL||'http://localhost:8000';
+test('ülevaade, filter, Python-import ja eksport',async({page})=>{
+ test.setTimeout(180000);
+ await page.goto(base);
+ await expect(page.getByRole('heading',{name:'Selge vaade finantsidele'})).toBeVisible();
+ await expect(page.locator('.kpis')).toContainText('772,6 mln');
+ await page.locator('[data-page="arved"]').click();
+ await expect(page.locator('.runtime')).toContainText('Pydantic 2.',{timeout:120000});
+ await page.locator('#invoiceFilter').selectOption('duplicate');
+ await expect(page.locator('#invoiceTable')).toContainText('2 / 17 dokumenti');
+ await page.locator('#invoiceFilter').selectOption('all');
+ await page.getByText('Kleebi CSV tekst',{exact:true}).click();
+ await page.locator('#csvText').fill('invoice_id;supplier_id;supplier_name;invoice_number;invoice_date;service_date;due_date;description;net_cents;vat_rate;vat_cents;gross_cents;cost_center;account;provenance\nUI-TEST;TEST;Testtarnija;UI-01;2026-10-02;2026-09-30;2026-10-16;Test;100000;0.24;24000;124001;DEMO_IT;DEMO_KULU;SUNTEETILINE');
+ await page.locator('#pasteImport').click();
+ await expect(page.locator('#invoiceTable')).toContainText('18 / 18 dokumenti');
+ await page.locator('#search').fill('UI-TEST');
+ await page.getByRole('button',{name:'Vaata',exact:true}).click();
+ await expect(page.locator('#invoiceDetail')).toContainText('SUMMA');
+ const download=page.waitForEvent('download');
+ await page.getByRole('button',{name:'Excel',exact:true}).click();
+ expect((await download).suggestedFilename()).toBe('arvete_kontroll.xlsx');
+ await page.locator('[data-page="analuus"]').click();
+ await page.locator('#institution').selectOption({label:'Keeleamet'});
+ await expect(page.locator('tbody')).toContainText('429');
+ await expect(page.locator('tbody tr')).toHaveCount(1);
+ await page.locator('#analysisView').selectOption('grants');
+ await expect(page.locator('tbody')).toContainText('600,00');
+});

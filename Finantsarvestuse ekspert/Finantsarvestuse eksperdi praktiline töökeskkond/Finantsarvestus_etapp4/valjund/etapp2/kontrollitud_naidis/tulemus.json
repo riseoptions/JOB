@@ -1,0 +1,14 @@
+{
+  "as_of": "2026-11-05",
+  "documents": 17,
+  "status_counts": {
+    "SISEND": 15,
+    "TAGASTATUD": 1,
+    "KAJASTATUD": 1
+  },
+  "journal_entries": 1,
+  "foreign_key_errors": 0,
+  "integrity": "ok",
+  "simulation": true,
+  "payments_executed": false
+}

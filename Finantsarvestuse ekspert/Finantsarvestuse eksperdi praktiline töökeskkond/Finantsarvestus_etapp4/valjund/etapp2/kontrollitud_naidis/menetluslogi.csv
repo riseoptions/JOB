@@ -1,0 +1,25 @@
+﻿event_id;document_id;actor_id;occurred_at;action;old_status;new_status;reason
+1;DEMO-001;analuutik;2026-11-06T06:40:33.199343+00:00;IMPORT;PUUDUB;SISEND;Sünteetiline CSV-sisend
+2;DEMO-002;analuutik;2026-11-06T06:40:33.199380+00:00;IMPORT;PUUDUB;SISEND;Sünteetiline CSV-sisend
+3;DEMO-003;analuutik;2026-11-06T06:40:33.199396+00:00;IMPORT;PUUDUB;SISEND;Sünteetiline CSV-sisend
+4;DEMO-004;analuutik;2026-11-06T06:40:33.199408+00:00;IMPORT;PUUDUB;SISEND;Sünteetiline CSV-sisend
+5;DEMO-005;analuutik;2026-11-06T06:40:33.199420+00:00;IMPORT;PUUDUB;SISEND;Sünteetiline CSV-sisend
+6;DEMO-006;analuutik;2026-11-06T06:40:33.199431+00:00;IMPORT;PUUDUB;SISEND;Sünteetiline CSV-sisend
+7;VIGA-001;analuutik;2026-11-06T06:40:33.199445+00:00;IMPORT;PUUDUB;SISEND;Sünteetiline CSV-sisend
+8;VIGA-002;analuutik;2026-11-06T06:40:33.199456+00:00;IMPORT;PUUDUB;SISEND;Sünteetiline CSV-sisend
+9;VIGA-003;analuutik;2026-11-06T06:40:33.199466+00:00;IMPORT;PUUDUB;SISEND;Sünteetiline CSV-sisend
+10;VIGA-004;analuutik;2026-11-06T06:40:33.199476+00:00;IMPORT;PUUDUB;SISEND;Sünteetiline CSV-sisend
+11;VIGA-005;analuutik;2026-11-06T06:40:33.199486+00:00;IMPORT;PUUDUB;SISEND;Sünteetiline CSV-sisend
+12;VIGA-006;analuutik;2026-11-06T06:40:33.199497+00:00;IMPORT;PUUDUB;SISEND;Sünteetiline CSV-sisend
+13;VIGA-007;analuutik;2026-11-06T06:40:33.199507+00:00;IMPORT;PUUDUB;SISEND;Sünteetiline CSV-sisend
+14;VIGA-008;analuutik;2026-11-06T06:40:33.199518+00:00;IMPORT;PUUDUB;SISEND;Sünteetiline CSV-sisend
+15;VIGA-009;analuutik;2026-11-06T06:40:33.199548+00:00;IMPORT;PUUDUB;SISEND;Sünteetiline CSV-sisend
+16;VIGA-010;analuutik;2026-11-06T06:40:33.199557+00:00;IMPORT;PUUDUB;SISEND;Sünteetiline CSV-sisend
+17;PUUDUV-aaf2b37753ef7671;analuutik;2026-11-06T06:40:33.199586+00:00;IMPORT;PUUDUB;SISEND;Sünteetiline CSV-sisend
+18;DEMO-001;analuutik;2026-11-06T06:40:33.201945+00:00;ESITA;SISEND;KONTROLLITUD;"Teenuse periood september; maksetähtaeg möödas, makseinfo vajab eraldi kontrolli"
+19;DEMO-001;sisukinnitaja;2026-11-06T06:40:33.202106+00:00;KOOSKOLASTA;KONTROLLITUD;KOOSKOLASTATUD;Õppesimulatsioon: septembri IT-teenus on vastu võetud
+20;DEMO-001;eelarvejuht;2026-11-06T06:40:33.202331+00:00;KINNITA;KOOSKOLASTATUD;KINNITATUD;"Õppesimulatsioon: kuluallikas kontrollitud; septembri periood kinnitatud"
+21;DEMO-001;analuutik;2026-11-06T06:40:33.202624+00:00;EDASTA;KINNITATUD;EDASTATUD;Õppesimulatsioon: hoiatused üle vaadatud, edastan näidiskande jaoks
+22;DEMO-001;rtk_demo;2026-11-06T06:40:33.202997+00:00;KAJASTA;EDASTATUD;KAJASTATUD;"Simuleeritud tekkepõhine kanne; makset ei tehtud"
+23;DEMO-003;analuutik;2026-11-06T06:40:33.203227+00:00;ESITA;SISEND;KONTROLLITUD;Õppenäite tähtaja hoiatus on üle vaadatud
+24;DEMO-003;sisukinnitaja;2026-11-06T06:40:33.203267+00:00;TAGASTA;KONTROLLITUD;TAGASTATUD;Õppesimulatsioon: teenuse vastuvõtu kinnitus vajab täiendamist
