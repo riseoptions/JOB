@@ -1,0 +1,2 @@
+﻿invoice_id;supplier_id;supplier_name;invoice_number;invoice_date;service_date;due_date;description;net_cents;vat_rate;vat_cents;gross_cents;cost_center;account;status;provenance;note
+IMPORT-001;DEMO-T001;Näidistarnija 1 (fiktiivne);IMP-001;2026-10-02;2026-09-30;2026-10-16;IT hooldus;100000;0.24;24000;124001;DEMO_IT;DEMO_KULU;SISEND;SUNTEETILINE;"Õppenäide; ei tõenda maksukäsitluse sobivust tegelikule tehingule"
