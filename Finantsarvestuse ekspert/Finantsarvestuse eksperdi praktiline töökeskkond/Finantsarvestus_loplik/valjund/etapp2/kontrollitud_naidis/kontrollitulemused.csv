@@ -1,0 +1,41 @@
+﻿document_id;as_of;code;severity;field;message
+DEMO-001;2026-11-05;ULETAHTAJA;HOIATUS;due_date;"Tähtaeg möödas; see ei tõenda tasumata olekut"
+DEMO-001;2026-11-05;PERIOOD;HOIATUS;service_date;"Teenuse ja arve kuu erinevad; kinnita õige arvestusperiood"
+DEMO-002;2026-11-05;ULETAHTAJA;HOIATUS;due_date;"Tähtaeg möödas; see ei tõenda tasumata olekut"
+DEMO-002;2026-11-05;DUPLIKAAT;VIGA;invoice_number;Sama tarnija ja normaliseeritud arvenumber teises dokumendis
+DEMO-003;2026-11-05;ULETAHTAJA;HOIATUS;due_date;"Tähtaeg möödas; see ei tõenda tasumata olekut"
+DEMO-004;2026-11-05;ULETAHTAJA;HOIATUS;due_date;"Tähtaeg möödas; see ei tõenda tasumata olekut"
+DEMO-005;2026-11-05;ULETAHTAJA;HOIATUS;due_date;"Tähtaeg möödas; see ei tõenda tasumata olekut"
+DEMO-006;2026-11-05;ULETAHTAJA;HOIATUS;due_date;"Tähtaeg möödas; see ei tõenda tasumata olekut"
+PUUDUV-aaf2b37753ef7671;2026-11-05;PUUDUV_VALI;VIGA;invoice_id;Kohustuslik väärtus puudub
+PUUDUV-aaf2b37753ef7671;2026-11-05;ULETAHTAJA;HOIATUS;due_date;"Tähtaeg möödas; see ei tõenda tasumata olekut"
+PUUDUV-aaf2b37753ef7671;2026-11-05;PERIOOD;HOIATUS;service_date;"Teenuse ja arve kuu erinevad; kinnita õige arvestusperiood"
+VIGA-001;2026-11-05;PUUDUV_VALI;VIGA;supplier_name;Kohustuslik väärtus puudub
+VIGA-001;2026-11-05;ULETAHTAJA;HOIATUS;due_date;"Tähtaeg möödas; see ei tõenda tasumata olekut"
+VIGA-001;2026-11-05;PERIOOD;HOIATUS;service_date;"Teenuse ja arve kuu erinevad; kinnita õige arvestusperiood"
+VIGA-002;2026-11-05;KUUPAEV;VIGA;invoice_date;Vajalik on kehtiv ISO-kuupäev AAAA-KK-PP
+VIGA-002;2026-11-05;ULETAHTAJA;HOIATUS;due_date;"Tähtaeg möödas; see ei tõenda tasumata olekut"
+VIGA-003;2026-11-05;ULETAHTAJA;HOIATUS;due_date;"Tähtaeg möödas; see ei tõenda tasumata olekut"
+VIGA-003;2026-11-05;PERIOOD;HOIATUS;service_date;"Teenuse ja arve kuu erinevad; kinnita õige arvestusperiood"
+VIGA-003;2026-11-05;SUMMA;VIGA;gross_cents;Neto + käibemaks ei võrdu brutoga
+VIGA-004;2026-11-05;ULETAHTAJA;HOIATUS;due_date;"Tähtaeg möödas; see ei tõenda tasumata olekut"
+VIGA-004;2026-11-05;PERIOOD;HOIATUS;service_date;"Teenuse ja arve kuu erinevad; kinnita õige arvestusperiood"
+VIGA-004;2026-11-05;KM_SUMMA;VIGA;vat_cents;Ühe rea käibemaks peab olema 24000 senti
+VIGA-005;2026-11-05;ULETAHTAJA;HOIATUS;due_date;"Tähtaeg möödas; see ei tõenda tasumata olekut"
+VIGA-005;2026-11-05;PERIOOD;HOIATUS;service_date;"Teenuse ja arve kuu erinevad; kinnita õige arvestusperiood"
+VIGA-005;2026-11-05;KONTO;VIGA;account;Tundmatu DEMO-konto
+VIGA-005;2026-11-05;KULUKESKUS;VIGA;cost_center;Tundmatu DEMO-kulukeskus
+VIGA-006;2026-11-05;ULETAHTAJA;HOIATUS;due_date;"Tähtaeg möödas; see ei tõenda tasumata olekut"
+VIGA-006;2026-11-05;PERIOOD;HOIATUS;service_date;"Teenuse ja arve kuu erinevad; kinnita õige arvestusperiood"
+VIGA-006;2026-11-05;RAHA_TYYP;VIGA;net_cents;Vajalik on mittenegatiivne täisarv sentides
+VIGA-007;2026-11-05;ULETAHTAJA;HOIATUS;due_date;"Tähtaeg möödas; see ei tõenda tasumata olekut"
+VIGA-007;2026-11-05;PERIOOD;HOIATUS;service_date;"Teenuse ja arve kuu erinevad; kinnita õige arvestusperiood"
+VIGA-007;2026-11-05;DUPLIKAAT;VIGA;invoice_number;Sama tarnija ja normaliseeritud arvenumber teises dokumendis
+VIGA-008;2026-11-05;TULEVIK;VIGA;invoice_date;Arve kuupäev on kontrollpäevast hilisem
+VIGA-008;2026-11-05;PERIOOD;HOIATUS;service_date;"Teenuse ja arve kuu erinevad; kinnita õige arvestusperiood"
+VIGA-009;2026-11-05;TAHTAEG;VIGA;due_date;Maksetähtaeg on enne arve kuupäeva
+VIGA-009;2026-11-05;ULETAHTAJA;HOIATUS;due_date;"Tähtaeg möödas; see ei tõenda tasumata olekut"
+VIGA-009;2026-11-05;PERIOOD;HOIATUS;service_date;"Teenuse ja arve kuu erinevad; kinnita õige arvestusperiood"
+VIGA-010;2026-11-05;ANDMELIIK;VIGA;provenance;Lubatud on ainult sünteetilised õppeandmed
+VIGA-010;2026-11-05;ULETAHTAJA;HOIATUS;due_date;"Tähtaeg möödas; see ei tõenda tasumata olekut"
+VIGA-010;2026-11-05;PERIOOD;HOIATUS;service_date;"Teenuse ja arve kuu erinevad; kinnita õige arvestusperiood"

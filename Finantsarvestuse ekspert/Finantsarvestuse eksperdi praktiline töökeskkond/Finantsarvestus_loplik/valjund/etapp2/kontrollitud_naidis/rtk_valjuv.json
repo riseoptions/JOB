@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.2",
+  "simulation": true,
+  "transfer_id": "DEMO-RTK-DEMO-001",
+  "invoice_id": "DEMO-001",
+  "source_hash": "2b2cbbd9e0ca6c5ee924160f6b450a4984031b6df8e0e36a688fbc663eaf1edd",
+  "invoice": {
+    "account": "DEMO_KULU",
+    "cost_center": "DEMO_IT",
+    "description": "IT hooldus",
+    "due_date": "2026-10-16",
+    "gross_cents": "124000",
+    "invoice_date": "2026-10-02",
+    "invoice_id": "DEMO-001",
+    "invoice_number": "N-001",
+    "net_cents": "100000",
+    "note": "Õppenäide; ei tõenda maksukäsitluse sobivust tegelikule tehingule",
+    "provenance": "SUNTEETILINE",
+    "service_date": "2026-09-30",
+    "status": "SISEND",
+    "supplier_id": "DEMO-T001",
+    "supplier_name": "Näidistarnija 1 (fiktiivne)",
+    "vat_cents": "24000",
+    "vat_rate": "0.24"
+  },
+  "vat_policy": "MITTE_MAHAARVATAV_OPPENaIDE"
+}
