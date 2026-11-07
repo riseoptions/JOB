@@ -1,0 +1,69 @@
+{
+  "version": "0.3",
+  "source_rows": 99,
+  "selected_months": 9,
+  "engines_equal": true,
+  "benchmark_scope": "CSV lugemine, filter, sort ja kontrollid; 7 korduse mediaan; väike fail; mitte üldine jõudlusväide",
+  "benchmark": {
+    "polars": {
+      "median_ms": 1.5757390000317173,
+      "samples_ms": [
+        1.5943369999149581,
+        1.563942000075258,
+        1.6283169999269376,
+        1.5757390000317173,
+        1.646763999929135,
+        1.4906940000400937,
+        1.4257679999900574
+      ]
+    },
+    "pandas": {
+      "median_ms": 2.4818489999915982,
+      "samples_ms": [
+        2.5323030000663493,
+        2.4818489999915982,
+        2.4923440000748087,
+        2.513957000019218,
+        2.1263439999756883,
+        2.2356949999675635,
+        2.109999000026619
+      ]
+    }
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "packages": {
+    "pydantic": "2.13.4",
+    "polars": "1.44.2",
+    "pandas": "2.2.3",
+    "openpyxl": "3.1.5"
+  },
+  "budget": {
+    "id": "TAIT2026A-94",
+    "label": "HTM valitsemisala kokku",
+    "level": "koond",
+    "initial_cents": 117694711700,
+    "budget_cents": 120752383300,
+    "actual_cents": 77260000700,
+    "change_cents": 3057671600,
+    "remaining_cents": 43492382600,
+    "usage": 0.6398217458619717,
+    "source_id": "TAIT2026A",
+    "source_cells": "C94:E94",
+    "sheet": "August 2026",
+    "budget_period": "2026-01-01/2026-12-31",
+    "actual_period": "2026-01-01/2026-08-31",
+    "measure": "seadusepildi_kulud",
+    "provenance": "TULETATUD"
+  },
+  "year_comparison": {
+    "label": "Haridus-ja Teadusministeerium",
+    "level": "koond",
+    "previous_cents": 81677061904,
+    "current_cents": 88618428861,
+    "difference_cents": 6941366957,
+    "change": 0.08498551239708659,
+    "source_cells": "O137:N137",
+    "provenance": "TULETATUD"
+  }
+}
