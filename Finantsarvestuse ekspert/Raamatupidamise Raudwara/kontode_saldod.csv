@@ -1,0 +1,17 @@
+﻿konto,liik,deebet_miinus_kreedit
+Akumuleeritud kulum,contra_asset,-3000
+Intressikulu,expense,600
+Kulum,expense,3000
+Muud tegevuskulud,expense,2000
+Müüdud kaupade kulu,expense,6000
+Müügitulu,revenue,-15000
+Nõuded ostjatele,asset,3000
+Osakapital,equity,-20000
+Palgakulu,expense,12000
+Pikaajaline laen,liability,-15000
+Raha,asset,29400
+Seadmed,asset,12000
+Teenusetulu,revenue,-20000
+Varud,asset,4000
+Võlad tarnijatele,liability,-3000
+Üürikulu,expense,4000

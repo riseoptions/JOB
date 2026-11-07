@@ -1,0 +1,17 @@
+NÄIDIS OÜ: FINANTSARUANNETE KONTROLL (ÕPPENÄIDE)
+=========================================================
+Müügitulu:                    35 000.00 €
+Kulud kokku:                  27 600.00 €
+Puhaskasum:                   7 400.00 €
+---------------------------------------------------------
+Varad kokku:                  45 400.00 €
+Kohustised:                   18 000.00 €
+Omakapital:                   27 400.00 €
+Bilansi vahe:                 0.00 €
+---------------------------------------------------------
+Äritegevuse rahavood:         6 400.00 €
+Investeerimise rahavood:      -12 000.00 €
+Finantseerimise rahavood:     35 000.00 €
+Raha perioodi lõpus:          29 400.00 €
+Rahavoogude kontrollivahe:    0.00 €
+KÕIK ARVULISED KONTROLLID LÄBITUD.

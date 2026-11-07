@@ -1,0 +1,15 @@
+﻿id,deebet,kreedit,summa_eur,rahavoog
+1,Raha,Osakapital,20000,finantseerimine
+2,Raha,Pikaajaline laen,15000,finantseerimine
+3,Seadmed,Raha,12000,investeerimine
+4,Varud,Võlad tarnijatele,10000,
+5,Nõuded ostjatele,Müügitulu,15000,
+6,Müüdud kaupade kulu,Varud,6000,
+7,Raha,Nõuded ostjatele,12000,äritegevus
+8,Raha,Teenusetulu,20000,äritegevus
+9,Palgakulu,Raha,12000,äritegevus
+10,Üürikulu,Raha,4000,äritegevus
+11,Muud tegevuskulud,Raha,2000,äritegevus
+12,Võlad tarnijatele,Raha,7000,äritegevus
+13,Intressikulu,Raha,600,äritegevus
+14,Kulum,Akumuleeritud kulum,3000,
