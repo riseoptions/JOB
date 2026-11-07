@@ -1,0 +1,532 @@
+Soovitan jätkata viie etapiga ühe tervikliku Work-projektina, kuid muuta see senisest mõnevõrra sisukamaks. Projekt peab täitma korraga kolme eesmärki:
+
+1. Kandideerimine: näidata praktiliselt sinu sobivust Haridus- ja Teadusministeeriumi finantsarvestuse eksperdi ametikohale.
+2. Õppimine: omandada kiiresti tööks vajalikud finantsarvestuse ja avaliku sektori rahanduse põhiteadmised.
+3. Tarkvaraarendus: luua töötav, dokumenteeritud ja põhjendatud Pythonil põhinev finantsandmete analüüsi- ja kontrollisüsteem.
+
+## 1. Reaalsed andmed ja tehnoloogia
+
+Kontrollisin Eesti ametlikke allikaid. Projekti jaoks on olemas sobivad pärisandmed.
+
+- [Rahandusministeeriumi 2026. aasta riigieelarve](https://www.fin.ee/riigi-rahandus-ja-maksud/riigieelarve-ja-eelarvestrateegia/2026-riigieelarve?utm_source=chatgpt.com) — sisaldab XLSX-faile nii eelarve kui ka selle täitmise kohta, sealhulgas 2026. aasta septembri majandusliku sisu järgi täitmise andmeid.&#x20;
+
+  [image](https://www.google.com/s2/favicons?domain=https://fin.ee\&sz=32)
+
+  Rahandusministeerium
+
+- [RTK finantsarvestuse teenus](https://www.rtk.ee/finantsarvestus-personaliteenus/arvestusteenused/finantsarvestus?utm_source=chatgpt.com) — kirjeldab tegelikke finantsarvestuse tööülesandeid ja SAP-i, SAP BO, RTIP-i ning e-arvete menetluskeskkonna kasutamist.&#x20;
+
+  [image](https://www.google.com/s2/favicons?domain=https://www.rtk.ee\&sz=32)
+
+  Riigi Tugiteenuste keskus
+
+- [Riigieelarve täitmise metoodika](https://www.fin.ee/riigi-rahandus-ja-maksud/riigieelarve-ja-eelarvestrateegia/tegevuspohise-eelarvestamise-kasiraamat/eelarve-taitmise-ulevaade?utm_source=chatgpt.com) — selgitab avaldatavate andmete tähendust ja võrdlemise tingimusi.&#x20;
+
+  [image](https://www.google.com/s2/favicons?domain=https://www.fin.ee\&sz=32)
+
+  Rahandusministeerium
+
+
+
+Minu tehniline eelistus: Python + pandas + openpyxl + SQLite + veebiliides, vajadusel Pyodide. Excel jääb sisend- ja väljundformaadiks, kuid põhiosa arvutustest ja kontrollidest tehakse Pythoniga.
+
+Pärisandmetest koostame eelarve- ja kulude analüüsi. Puuduva tehingutaseme info, näiteks üksikud ostuarved ja nende kooskõlastusringid, genereerime realistlike näidisandmetena ning märgistame selgelt sünteetiliseks.
+
+## 2. Projekti viis etappi
+
+| Etapp                        | Sisu                                                                                       | Peamine tulemus                                              |
+| ---------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------ |
+| 1. Analüüs ja ettevalmistus  | Tööprotsessid, pärisandmed, finantsarvestuse alused, projekti ja tarkvara spetsifikatsioon | Projekti alus, andmemudel, esimene õppemoodul                |
+| 2. Finantsarvestuse praktika | Ostuarved, kirjendid, kontrollireeglid, RTK töövood, Python ja SQL                         | Töötav finantsandmete kontrollimootor                        |
+| 3. Finantsanalüüs            | Eelarve täitmine, kulude võrdlus, hälbed, toetused, aruandlus, Excel                       | Analüüsimootor ja automaatsed aruanded                       |
+| 4. Veebirakendus             | Interaktiivsed graafikud, filtrid, andmete import ja eksport                               | GitHub Pagesis avaldatav demonstratsioon                     |
+| 5. Lõpetamine ja õppimine    | Testimine, juhendid, õppematerjal, praktilised ülesanded, esitlus                          | Terviklik GitHubi portfoolioprojekt ja kandideerimismaterjal |
+
+Iga etapp peab andma reaalselt kasutatava tulemuse, mitte ainult kirjeldusi.
+
+## 3. Worki põhjalik lähteprompt
+
+Kopeeri järgnev lähteülesanne uude Worki vestlusse. See kirjeldab kogu projekti, kuid annab korralduse alustada ainult esimesest etapist.
+
+# PROJEKT: Finantsarvestuse eksperdi praktiline töökeskkond ja õppeprojekt
+
+## 1. Sinu roll
+
+Tegutse samaaegselt järgmiste spetsialistidena:
+
+- Eesti avaliku sektori finantsarvestuse ekspert;
+- Haridus- ja Teadusministeeriumi finantsanalüütik;
+- Python- ja SQL-arendaja;
+- infosüsteemide analüütik ja tarkvaraarhitekt;
+- andmeanalüütik;
+- finantsarvestuse koolitaja ja õppematerjalide koostaja;
+- tarkvara testija ja tehnilise dokumentatsiooni koostaja.
+
+Loo terviklik eestikeelne praktiline GitHubi projekt.
+
+Projekti nimi: **Finantsarvestuse ja kulude analüüsi töökeskkond – Eesti avaliku sektori näitel**.
+
+Tegemist on sõltumatu õppe- ja demonstratsiooniprojektiga, mitte Haridus- ja Teadusministeeriumi või RTK ametliku infosüsteemiga.
+
+## 2. Projekti taust ja eesmärk
+
+Valmistun kandideerima Haridus- ja Teadusministeeriumi finantsarvestuse eksperdi ametikohale. Kandideerimise tähtaeg on 15.11.2026.
+
+Minu taust:
+
+- Tartu Ülikoolis omandatud matemaatika, füüsika ja majanduse alased teadmised;
+- ligikaudu kümneaastane õpetajatöö kogemus;
+- tarkvara testimise ja infosüsteemide analüüsi kogemus;
+- SQL-i, Pythoni, andmebaaside, API-de ja andmete kontrollimise kogemus;
+- huvi AI, automatiseerimise ning kaasaegse andmeanalüüsi vastu.
+
+Mul puudub samaväärne praktiline kogemus avaliku sektori finantsarvestuses.
+
+Projekt peab aitama seda teadmiste puudujääki vähendada ning tõendama minu analüütilisi ja tehnilisi oskusi.
+
+Projektil on kolm väljundit:
+
+1. Töötav finantsandmete analüüsi- ja kontrollisüsteem.
+2. Lihtsasti omandatav praktiline finantsarvestuse õppekomplekt.
+3. Professionaalne, kuid vaoshoitud GitHubi portfoolioprojekt kandideerimiseks.
+
+Tööta viie järjestikuse etapina. Ära püüa kõiki etappe ühe tööga valmis teha.
+
+## 3. Ametikoha tegelikud ülesanded
+
+Lähtume töökuulutuses kirjeldatud ülesannetest:
+
+1. Ministeeriumi majandustehinguid kajastavate dokumentide menetlemine.
+2. Koostöö ja infovahetus Riigi Tugiteenuste Keskusega.
+3. Toetuste menetlemise infosüsteemi ja ostuarvete süsteemi juurutamises ning kasutamises osalemine.
+4. Ministeeriumi kulude analüüsimine.
+5. Teenistujate nõustamine finantsarvestuse küsimustes.
+
+Projekt peab kõiki neid tegevusi praktiliselt illustreerima.
+
+## 4. Andmeallikad
+
+Eelista võimalikult palju tegelikke ja usaldusväärseid Eesti avalikke andmeid.
+
+Uuri eelkõige:
+
+- [https://www.fin.ee/](https://www.fin.ee/)
+- [https://www.hm.ee/](https://www.hm.ee/)
+- [https://www.rtk.ee/](https://www.rtk.ee/)
+- [https://www.riigiraha.fin.ee/](https://www.riigiraha.fin.ee/)
+- [https://avaandmed.eesti.ee/](https://avaandmed.eesti.ee/)
+- [https://www.rik.ee/](https://www.rik.ee/)
+- Eesti riigieelarve ja selle täitmise XLSX-andmestikke;
+- HTM-i valitsemisala avalikke eelarveid ja aruandeid;
+- Eesti riigihangete avalikke andmeid;
+- avaliku sektori raamatupidamise juhendeid;
+- riigi raamatupidamise üldeeskirja ja asjakohaseid õigusakte.
+
+Kontrolli veebiaadresse, andmete kättesaadavust, kasutustingimusi ja andmete ajakohasust.
+
+Ära eelda, et kõikidel veebilehtedel on API või avalik andmete eksport.
+
+### Andmete kasutamise põhimõtted
+
+A. Kasuta pärisandmeid seal, kus need on avalikult saadaval.
+
+B. Kui vajalikud üksiktehingud, ostuarved või kooskõlastusringid ei ole avalikud, genereeri Pythoniga realistlikud sünteetilised näidisandmed.
+
+C. Ära esita genereeritud andmeid tegelike ministeeriumi tehingutena.
+
+D. Dokumenteeri iga andmestiku allikas, periood, allalaadimise aeg, veerud ja võimalikud piirangud.
+
+E. Erista kõigis aruannetes tegelikud, tuletatud ja sünteetilised andmed.
+
+F. Ära võrdle eri aastate, perioodide või erinevate arvestusalustega näitajaid ilma metoodikat selgitamata.
+
+G. Väldi isikuandmeid ja mitteavalikku finantsteavet.
+
+H. Säilita võimalusel algandmed muutmata kujul, et tulemused oleksid kontrollitavad.
+
+## 5. Finantsarvestuse sisuline osa
+
+Õppeprojekt peab käsitlema vähemalt järgmisi teemasid:
+
+- Eesti avaliku sektori finantsarvestuse ülesehitus;
+- ministeeriumi ja RTK vastutuse jaotus;
+- tekkepõhine ja kassapõhine arvestus;
+- deebet, kreedit ja kahekordne kirjendamine;
+- kulud, tulud, nõuded ja kohustised;
+- ostuarved ja e-arved;
+- kulukontod, kulukeskused ja finantsdimensioonid;
+- käibemaksu arvestuse põhimõtted;
+- arvete kooskõlastamine ja kontrollimine;
+- eelarve ja tegelike kulude võrdlemine;
+- eelarve täitmise analüüs;
+- toetuste finantsarvestuse põhimõtted;
+- aruandlus, saldoandmikud ja auditijälg;
+- finantsandmete kvaliteedikontroll.
+
+Kasuta kehtivaid ametlikke juhendeid ning viita olulistele allikatele.
+
+Selgita ka olukordi, kus raamatupidamislik kulu, rahaline väljamakse ja eelarve täitmine ei tähenda sama asja.
+
+## 6. Infosüsteemid ja tööprotsessid
+
+Uuri Eesti riigi finantsarvestuses kasutatavate süsteemide ülesandeid:
+
+- SAP;
+- SAP Business Objects;
+- RTIP;
+- FitekIN või muu ametlikult dokumenteeritud e-arvete menetluskeskkond;
+- asjakohased toetuste menetlemise infosüsteemid.
+
+Kirjelda lihtsalt:
+
+1. Milline on iga süsteemi ülesanne?
+2. Milliseid andmeid selles töödeldakse?
+3. Kuidas andmed süsteemide vahel liiguvad?
+4. Mida teeb ministeeriumi finantsarvestuse ekspert?
+5. Mida teeb RTK?
+6. Milliseid tegevusi saab automatiseerida Pythoniga?
+7. Milliseid tegevusi peaks jätkuvalt tegema ametlikus infosüsteemis?
+
+Kui tegelikud liidesed või tehnilised andmemudelid ei ole avalikud, esita näidisprotsessid selgelt simulatsioonina.
+
+Ära püüa luua SAP-i koopiat.
+
+## 7. Tehnoloogiline lahendus
+
+Eelista lihtsat, praktilist ja põhjendatud arhitektuuri.
+
+Põhivahendid:
+
+- Python 3;
+- pandas ja NumPy;
+- openpyxl;
+- requests, kui on sobivad avalikud andmeallikad;
+- SQLite ja SQL;
+- matplotlib või Plotly;
+- pytest;
+- Git ja GitHub;
+- GitHub Pages;
+- vajadusel Pyodide.
+
+Minu eelistatud arenduskeskkonnad on Windows 11, Thonny, Google Colab ja vajadusel VS Code.
+
+### Exceli käsitlemine
+
+Excel ei pea olema peamine arvutuskeskkond.
+
+Python peab võimaldama:
+
+1. Lugeda Exceli XLSX-faile.
+2. Lugeda CSV- ja JSON-andmeid.
+3. Puhastada andmeid.
+4. Kontrollida andmetüüpe ja väärtusi.
+5. Ühendada erinevaid tabeleid.
+6. Leida duplikaate ja võimalikke arvestusvigu.
+7. Koostada koondtabeleid ja arvutada näitajaid.
+8. Luua graafikuid.
+9. Kirjutada tulemused uude Exceli faili.
+10. Koostada mitmelehelisi vormindatud XLSX-aruandeid.
+
+Selgita, millistel juhtudel on Python parem kui Excel ning millal Exceli kasutamine on põhjendatud.
+
+Oluline: arvutused peaksid võimalusel toimuma Pythonis, et tulemus ei sõltuks Exceli valemite ümberarvutamisest.
+
+### Veebirakenduse arhitektuur
+
+Lõpptulemus peab olema lihtsalt avatav interaktiivne veebirakendus.
+
+Eelista lahendust, mille demonstratsioon töötab GitHub Pagesis ilma tasulise serverita.
+
+Kaalu arhitektuuri:
+
+- Python töötleb ja valideerib andmed;
+- Python valmistab ette JSON- või CSV-väljundid;
+- veebileht kuvab aruanded, filtrid ja graafikud;
+- Pyodide võimaldab vajadusel käivitada Pythoni brauseris;
+- kasutaja saab importida enda CSV- või XLSX-faili ning eksportida tulemused;
+- GitHub Actions võib vajadusel uuendada avalikest allikatest saadud andmeid.
+
+Python peab jääma äriloogika ja analüüsi põhiliseks teostusvahendiks.
+
+Ära lisa keerulist backend'i, pilveandmebaasi, Dockerit või muud infrastruktuuri, kui selleks pole selget vajadust.
+
+Kui mõni funktsioon ei sobi GitHub Pagesi keskkonda, paku lihtne põhjendatud alternatiiv.
+
+## 8. Rakenduse funktsioonid
+
+Lõplikul tarkvaral peaks olema vähemalt viis põhimoodulit.
+
+### Moodul A. Andmeallikad
+
+- Avalike finantsandmete import.
+- CSV- ja XLSX-failide lugemine.
+- Andmete päritolu ja perioodi kuvamine.
+- Puuduvate ja vigaste väärtuste tuvastamine.
+- Genereeritud näidisandmete kasutamine.
+
+### Moodul B. Finantsdokumentide kontroll
+
+- Näidisostuarvete andmebaas.
+- Arvete summade ja kuupäevade kontroll.
+- Duplikaatarvete tuvastamine.
+- Puuduvate kohustuslike väljade kontroll.
+- Tasumistähtaegade kontroll.
+- Kulukeskuste ja kontode valideerimine.
+- Simuleeritud kooskõlastusring.
+- Vigade selgitused.
+
+### Moodul C. Finantsanalüüs
+
+- Eelarve ja tegelike kulude võrdlus.
+- Kulude jaotus kategooriate kaupa.
+- Perioodide võrdlus.
+- Eelarve täitmise protsent.
+- Hälvete analüüs.
+- Erandlike tehingute leidmine.
+- Toetuste kasutamise lihtsustatud jälgimine.
+
+### Moodul D. Aruandlus
+
+- Automaatne kuuaruanne.
+- Kulude kokkuvõte.
+- Veateadete ja kontrollitulemuste aruanne.
+- Exceli eksport.
+- CSV eksport.
+- Lühike juhtimiskokkuvõte.
+
+### Moodul E. Õppekeskkond
+
+- Finantsarvestuse põhimõisted.
+- Selgitused arvutusnäidetega.
+- Näited Pythoni ja SQL-iga.
+- Praktilised ülesanded.
+- Kontrollküsimused ja vastused.
+- Selgitus, millise tegeliku tööülesandega tegevus seostub.
+
+## 9. AI kasutamine
+
+Kaasa tehisintellekti ainult seal, kus sellest on selge praktiline kasu.
+
+Võimalikud kasutusjuhud:
+
+- finantsaruannete lihtsas keeles kokkuvõtmine;
+- kõrvalekallete selgitamine;
+- SQL-päringute koostamise abistamine;
+- andmekvaliteedi probleemide analüüs;
+- kasutaja juhendamine finantsmõistete puhul;
+- õppija teadmiste kontroll.
+
+Ära kasuta AI-d arvete matemaatiliseks kontrollimiseks, kui deterministlik Python on täpsem ja lihtsam.
+
+AI soovitused ei tohi automaatselt kinnitada arveid ega teha finantsotsuseid.
+
+AI on selles projektis valikuline abivahend, mitte vältimatu sõltuvus.
+
+## 10. Õppematerjali nõuded
+
+Koosta praktiline eestikeelne finantsarvestuse kiirkursus.
+
+Õppematerjal peab sobima inimesele, kellel on matemaatika-, majandus- ja IT-taust, kuid puudub piisav praktiline raamatupidamiskogemus.
+
+Iga teema juures kasuta järgmist ülesehitust:
+
+A. Mida see tähendab lihtsas keeles?
+
+B. Miks seda finantsarvestuse eksperdil vaja on?
+
+C. Kuidas see päris töös toimub?
+
+D. Üks konkreetne arvuline näide.
+
+E. Võimalusel Pythoniga tehtav arvutus või kontroll.
+
+F. Praktiline ülesanne.
+
+G. Ülesande lahendus ja selgitus.
+
+H. Tüüpiline viga või väärarusaam.
+
+I. Mida võiks selle teema kohta töövestlusel küsida?
+
+Kasuta läbiva näitena ühte realistlikku fiktiivset ministeeriumi tööprotsessi.
+
+Lisa lõppu:
+
+- põhimõistete sõnastik;
+- 30–50 sisulist kontrollküsimust koos vastustega;
+- vähemalt 10 praktilist arvutus- või andmetöötlusülesannet;
+- tüüpilised finantsarvestuse tööolukorrad;
+- lühike finantsarvestuse eksperdi tööpäeva simulatsioon;
+- olulised õigusaktid ja ametlikud allikad.
+
+Ära kirjuta liigset teooriat. Eelista näiteid ja sisulisi selgitusi.
+
+## 11. Projekti dokumentatsioon
+
+Koosta GitHubi Markdown-vormingus vähemalt järgmised dokumendid:
+
+- README.md – projekti ülevaade.
+- PROJEKTI_SPEC.md – eesmärgid, ulatus, etapid ja vastuvõtukriteeriumid.
+- TARKVARA_SPEC.md – tarkvara funktsionaalsed ja tehnilised nõuded.
+- ARHITEKTUUR.md – komponendid ja andmevood.
+- ANDMEALLIKAD.md – andmete päritolu ja piirangud.
+- ANDMEMUDEL.md – tabelid, veerud ja seosed.
+- FINANTSARVESTUSE_OPPEMATERJAL.md – õppematerjal.
+- KASUTUSJUHEND.md – tarkvara kasutamine.
+- ARENDUSJUHEND.md – paigaldamine ja käivitamine.
+- TESTIMINE.md – testid ja tulemused.
+- KANDIDEERIMISE_ESITLUS.md – projekti lühitutvustus tööandjale.
+
+Lisa sobivad `.py`, `.ipynb`, `.sql`, `.csv`, `.xlsx` ning veebirakenduse failid.
+
+Kõik failid peavad moodustama ühe sidusa ja kasutatava GitHubi projekti.
+
+## 12. Viis tööetappi
+
+### ETAPP 1 – Uurimine, finantsarvestuse alused ja spetsifikatsioon
+
+- Uuri HTM-i ja RTK avalikke finantsarvestuse tööprotsesse.
+- Leia ja kontrolli sobivad pärisandmete allikad.
+- Laadi alla ja analüüsi vähemalt kaks sobivat avalikku andmestikku, kui need on kättesaadavad.
+- Selgita finantsarvestuse põhimõisteid.
+- Koosta projekti ja tarkvara esialgsed spetsifikatsioonid.
+- Koosta andmemudel ja arhitektuur.
+- Loo esimesed realistlikud näidisandmed.
+- Koosta esimene praktiline õppemoodul.
+
+### ETAPP 2 – Finantsdokumentide menetlemine
+
+- Loo näidisostuarvete andmestik.
+- Rakenda Pythoniga arvestus- ja kontrollireeglid.
+- Kasuta SQLite'i ja SQL-päringuid.
+- Simuleeri dokumentide menetlemist ja RTK-ga andmevahetust.
+- Lisa veatuvastus, testid ja juhendid.
+- Selgita raamatupidamiskannete loogikat.
+
+### ETAPP 3 – Kulude analüüs ja aruandlus
+
+- Töötle päris eelarveandmeid.
+- Koosta eelarve täitmise analüüs.
+- Võrdle planeeritud ja tegelikke kulusid.
+- Rakenda pandas-põhist analüüsi.
+- Loo vormindatud Exceli aruanded.
+- Lisa toetuste arvestuse näidisjuhtum.
+- Koosta õppematerjal koos ülesannetega.
+
+### ETAPP 4 – Interaktiivne veebirakendus
+
+- Loo eestikeelne kasutajaliides.
+- Kuva tegelikud ja sünteetilised andmed eraldi.
+- Lisa finantsnäitajad, graafikud ja filtrid.
+- Lisa finantsdokumentide kontroll.
+- Lisa CSV/XLSX import ja eksport.
+- Kasuta vajadusel Pyodide'i.
+- Valmista rakendus ette GitHub Pagesis avaldamiseks.
+- Koosta kasutusjuhend.
+
+### ETAPP 5 – Kvaliteedikontroll ja kandideerimispakett
+
+- Testi kogu süsteemi.
+- Kontrolli arvutuste ja aruannete õigsust.
+- Paranda avastatud vead.
+- Lõpeta õppematerjalid.
+- Koosta projekti tehniline ja sisuline kokkuvõte.
+- Koosta 3–5 minuti pikkune demonstratsioon.
+- Koosta ühe lehekülje pikkune selgitus tööandjale.
+- Koosta võimalikud töövestluse küsimused ja vastused.
+- Valmista ette terviklik GitHubi projekt.
+
+## 13. Iga etapi töökorraldus
+
+Kõik viis etappi peavad kasutama sama projekti arhitektuuri, andmemudelit ja failistruktuuri.
+
+Iga etapi lõpus:
+
+1. Anna üle päriselt loodud ja kontrollitud failid.
+2. Selgita, mis valmis.
+3. Näita, kuidas tulemust käivitada ja kasutada.
+4. Anna 15–30 minuti pikkune õppemoodul.
+5. Too välja teadaolevad puudused.
+6. Kirjelda, mis läheb järgmisse etappi.
+7. Uuenda projekti dokumentatsiooni.
+8. Tee võimalusel kontrolltestid.
+
+Ära kirjuta, et funktsioon töötab, kui seda ei ole tegelikult kontrollitud.
+
+Ära asenda nõutud töötavat koodi pseudokoodiga.
+
+Kui ligipääs GitHubile või avaldamiskeskkonnale puudub, valmista ette allalaaditav terviklik projekt ning avaldamisjuhend.
+
+Ära küsi iga väikese tehnilise valiku jaoks kinnitust. Tee põhjendatud otsused ja dokumenteeri need.
+
+## 14. Olulised kvaliteedinõuded
+
+- Kõik selgitused ja kasutajaliides peavad olema eesti keeles.
+- Kood peab olema arusaadav ja kommenteeritud.
+- Arvutused peavad olema kontrollitavad.
+- Kasuta rahasummade täpsel arvutamisel sobivaid andmetüüpe ja ümardamisreegleid.
+- Säilita algandmete päritolu.
+- Ära mõtle välja tegelikke finantstehinguid.
+- Väldi liigset tehnoloogilist keerukust.
+- Ära ehita lahendust, mis vajab tasulisi teenuseid.
+- Eelista funktsioneerivat väikest lahendust suurele pooleliolevale süsteemile.
+- Too selgelt välja erisused päris riigiasutuse tööprotsessidest.
+- Arvesta kandideerimise tähtajaga 15.11.2026.
+
+## 15. Alustamise korraldus
+
+Tutvu kogu lähteülesandega ja koosta esmalt lühike terviklik tööplaan.
+
+Seejärel **teosta ainult ETAPP 1**.
+
+Etapp 1 peab andma tegelikud väljundid: kontrollitud andmeallikad, vähemalt esimese töödeldud andmestiku, esialgsed projekti- ja tarkvaraspetsifikatsioonid, andmemudeli, arhitektuuri ning esimese õppemooduli.
+
+Ära alusta etappe 2–5 enne minu järgmist korraldust.
+
+## 4. Etappide lühikesed jätkupromptid
+
+Kasuta järgnevaid samas Worki vestluses. Esimese etapi prompti võid sisestada pärast lähteülesannet, kui Work pole seda juba täitma asunud.
+
+Etapp 1 – alusta projektiga
+
+Alusta lähteülesandes kirjeldatud projekti 1. etapi teostamist.
+
+Kontrolli ametlikud andmeallikad, hangi esimesed reaalsed finantsandmed, koosta projekti- ja tarkvaraspetsifikatsioon, andmemudel ning arhitektuur. Loo esimene praktiline õppemoodul.
+
+Anna üle tegelikud failid ja etapi tulemuste kokkuvõte. Ära alusta 2. etappi.
+
+Etapp 2 – finantsarvestuse praktika
+
+Jätka sama projekti 2. etapiga, tuginedes 1. etapis valminud failidele.
+
+Loo Pythonil ja SQLite'il põhinev ostuarvete menetlemise ja finantsandmete kontrollimootor koos realistlike näidisandmete, SQL-päringute, testide ja õppematerjaliga. Kontrolli funktsioonide toimimist ning säilita olemasolev arhitektuur.
+
+Etapp 3 – finantsanalüüs
+
+Teosta projekti 3. etapp.
+
+Kasuta võimalikult palju tegelikke avalikke eelarve- ja finantsandmeid. Loo Pythoniga eelarve täitmise analüüs, kulude võrdlused, hälvete kontroll, toetuste näidisanalüüs ja automaatsed Exceli aruanded. Lisa arvulised näited, selgitused, harjutused ning testid.
+
+Etapp 4 – veebirakendus
+
+Teosta projekti 4. etapp.
+
+Loo eelnevate etappide toimiva Pythoni analüüsimootori põhjal eestikeelne interaktiivne finantsanalüüsi veebirakendus. Lisa graafikud, filtrid, arvete kontroll, andmete import ja eksport. Eelista GitHub Pagesiga sobivat lahendust. Testi rakendust ning koosta avaldamis- ja kasutusjuhend.
+
+Etapp 5 – lõppviimistlus
+
+Teosta projekti 5. etapp.
+
+Kontrolli kogu projekti toimimist ja finantsarvutuste korrektsust. Lõpeta dokumentatsioon, kasutusjuhendid ja praktiline õppematerjal. Koosta GitHubi esitlusvalmis projekt ning kandideerimiseks ühe lehekülje pikkune kokkuvõte, 3–5 minuti demonstratsioon ja töövestluse küsimused koos vastustega.
+
+## 5. Kuidas Worki tulemusi hinnata?
+
+Soovitan pärast iga etappi kasutada kolme lihtsat kontrollküsimust:
+
+- Kas see töötab? Kas failid, Pythoni programmid ja arvutused on tegelikult kasutatavad?
+- Kas ma saan sellest aru? Kas oskan selgitada, mida ja miks programm arvutab?
+- Kas see näitab minu sobivust? Kas suudan seostada tehtu mõne töökuulutuses nimetatud ülesandega?
+
+Viimane küsimus on eriti tähtis. Kandideerimisel ei pea sa tõestama, et oskad juba kõike, mida kogenud finantsarvestuse ekspert oskab. Mõistlikum on näidata, et sul on vajalik tehniline ja analüütiline ettevalmistus ning oled iseseisvalt omandanud osa uue valdkonna praktilistest teadmistest.
+
+Minu soovitus on alustada kohe esimese etapiga ja mitte kiirustada veebilehe loomise juurde. Projekti kõige väärtuslikum osa tööandja jaoks on tõenäoliselt just päris finantsandmete mõistmine, arvete kontrollimise loogika ja eelarveanalüüsi korrektsus.

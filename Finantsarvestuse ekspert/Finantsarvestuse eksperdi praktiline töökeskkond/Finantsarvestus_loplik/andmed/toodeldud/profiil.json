@@ -1,0 +1,128 @@
+{
+  "schema_version": "0.1",
+  "budget_records": 34,
+  "actual_records": 99,
+  "profiles": [
+    {
+      "source_id": "RE2026",
+      "sheet": "2026. aasta seadusepilt",
+      "physical_rows": 1096,
+      "physical_columns": 7,
+      "last_nonempty_row": 1096,
+      "last_nonempty_column": 5,
+      "formula_count": 0,
+      "missing_formula_cache": 0
+    },
+    {
+      "source_id": "RE2026",
+      "sheet": "2026. aasta täpsustatud eelnõu",
+      "physical_rows": 1094,
+      "physical_columns": 13,
+      "last_nonempty_row": 1094,
+      "last_nonempty_column": 11,
+      "formula_count": 0,
+      "missing_formula_cache": 0
+    },
+    {
+      "source_id": "TAIT2026",
+      "sheet": "Eelarve täitmine üheksa kuud",
+      "physical_rows": 788,
+      "physical_columns": 632,
+      "last_nonempty_row": 258,
+      "last_nonempty_column": 16,
+      "formula_count": 211,
+      "missing_formula_cache": 0
+    },
+    {
+      "source_id": "TAIT2026A",
+      "sheet": "August 2026",
+      "physical_rows": 1111,
+      "physical_columns": 8,
+      "last_nonempty_row": 1109,
+      "last_nonempty_column": 8,
+      "formula_count": 0,
+      "missing_formula_cache": 0
+    }
+  ],
+  "excluded_future_columns": [
+    "K",
+    "L",
+    "M"
+  ],
+  "reconciliation": [
+    {
+      "source_row": 137,
+      "label": "Haridus-ja Teadusministeerium",
+      "monthly_sum_cents": 88618428861,
+      "stated_ytd_cents": 88618428861,
+      "difference_cents": 0,
+      "status": "OK"
+    },
+    {
+      "source_row": 138,
+      "label": "sh tööjõukulud",
+      "monthly_sum_cents": 19247496476,
+      "stated_ytd_cents": 19247496476,
+      "difference_cents": 0,
+      "status": "OK"
+    },
+    {
+      "source_row": 139,
+      "label": "sh majandamiskulud",
+      "monthly_sum_cents": 7461892250,
+      "stated_ytd_cents": 7461892250,
+      "difference_cents": 0,
+      "status": "OK"
+    },
+    {
+      "source_row": 140,
+      "label": "sh sotsiaaltoetused",
+      "monthly_sum_cents": 2593396762,
+      "stated_ytd_cents": 2593396762,
+      "difference_cents": 0,
+      "status": "OK"
+    },
+    {
+      "source_row": 141,
+      "label": "sh muud toetused",
+      "monthly_sum_cents": 55887346590,
+      "stated_ytd_cents": 55887346590,
+      "difference_cents": 0,
+      "status": "OK"
+    },
+    {
+      "source_row": 142,
+      "label": "sh muud kulud, v.a amortisatsioon",
+      "monthly_sum_cents": 17024134,
+      "stated_ytd_cents": 17024134,
+      "difference_cents": 0,
+      "status": "OK"
+    },
+    {
+      "source_row": 143,
+      "label": "sh käibemaksukulu",
+      "monthly_sum_cents": 1413864257,
+      "stated_ytd_cents": 1413864257,
+      "difference_cents": 0,
+      "status": "OK"
+    },
+    {
+      "source_row": 144,
+      "label": "sh investeeringud koos käibemaksukuluga",
+      "monthly_sum_cents": 1997408392,
+      "stated_ytd_cents": 1997408392,
+      "difference_cents": 0,
+      "status": "OK"
+    },
+    {
+      "source_row": 145,
+      "label": "sh välistoetuste arvel",
+      "monthly_sum_cents": 9498788077,
+      "stated_ytd_cents": 9498788077,
+      "difference_cents": 0,
+      "status": "OK"
+    }
+  ],
+  "comparison_allowed": false,
+  "comparison_reason": "Algne kulueelarve ei võrdu kulude ja investeeringute täitmise ulatusega; puudub muudetud eelarve kaardistus."
+}
